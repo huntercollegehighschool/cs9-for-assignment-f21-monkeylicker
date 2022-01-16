@@ -38,5 +38,15 @@ buzz
 fizz
 
 """
+n = int(input("Enter a number: "))
 
-# write your code here 
+for z in range (1, n+1):
+  if z%3 == 0 and z%5 != 0:
+    print("fizz")
+  elif z%5 == 0 and z%3 != 0:
+    print("buzz")
+  elif z%3 == 0 and z%5 == 0:
+    print("fizzbuzz")
+  elif z%3 != 0 and z%5 != 0:
+    print(z)
+ 
